@@ -1,0 +1,32 @@
+public class Student {
+    private String number;
+    private String name;
+    private String college;
+    Student(String number,String name,String college){
+        this.number=number;
+        this.name=name;
+        this.college=college;
+    }
+    public String getNumber(){
+        return number;
+    }
+    public String getName(){
+        return name;
+    }
+    public String getCollege(){
+        return college;
+    }
+    public void setNumber(String number){
+        this.number=number;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public void setCollege(String college){
+        this.college=college;
+    }
+    @Override
+    public String toString() {
+        return number+" "+name+" "+college;
+    }
+}
